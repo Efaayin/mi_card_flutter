@@ -5,7 +5,12 @@ void main() {
     MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.teal,
-        body: Container(),
+        body: SafeArea(
+          child: Container(
+            child: Text('Hello'),
+            color: Colors.white,
+          ),
+        ),
       ),
     ),
   );
